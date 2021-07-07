@@ -4,6 +4,7 @@
 - Clone this repo.
 ```
 git clone https://github.com/Mirror-Score/webdev-group1
+cd webdev-group1
 ```
 
 - create you name branch.
