@@ -1,6 +1,6 @@
 # MirrorScore webdev-group1
 
-Workflow
+## Workflow -
 - Clone this repo.
 ```
 git clone https://github.com/Mirror-Score/webdev-group1
@@ -20,3 +20,5 @@ git commit -a -m "your message that you have made or update"
 ```
 git push origin your-name
 ```
+
+###### COPYRIGHT © 2021. ALL RIGHTS RESERVED. DEVELOPER PRO
