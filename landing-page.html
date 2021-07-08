@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" href="landing-page.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+
+    @keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+
+    .box {  
+    animation: 0.65s ease-out 0s 1 slideIn;
+    
+    background: #333;
+    padding: 50px;
+    }
+
+    .container-fluid{
+        height: 700px;
+        background-image: linear-gradient(0deg,rgba(255, 255, 255, 0.87),rgb(132, 201, 206));
+    }
+
+    .hover-item {
+    transition: 0.35s;
+    }
+    
+    .hover-item:hover {
+    transform: translate(0, -25px); 
+    }
+
+    .teachers{
+        height: 170px;
+        width: 170px;
+    }
+</style>    
+
+</head>
+
+<body>
+
+    <!-- ONE-ON-ONE CLASSES -->
+
+    <section class=" container-fluid p-4">
+        <div class="row p-4">
+            <div class="col ml-5">
+                <a><img src="https://mintbook.com/assetsNew/img/ams.gif" height="600px" width="600px"></a>
+            </div>
+            <div class="box col p-4 m-4" style="background-color: rgb(255, 255, 255); border-radius: 20px;  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 10px 0 rgba(0, 0, 0, 0.2);"><br>
+                <h1 class="text-center">One-On-One Private Classes</h1><br>
+                <h6 class="text-center m-3">Get 1-On-1, Face-to-Face & Two-way Interaction with our Expert Faculty. Engage Face-To-Face With your
+                    mentor via video call.</h6><br>
+                <a ><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px; ">One-On-One Private
+                    Classes</a><br><br>
+                <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Clear Doubts
+                    Live</a><br><br>
+                <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Learn From Expert
+                    Faculty</a><br><br>
+                <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Online Videos & Mock Tests
+                </a><br><br><br>
+                <div class="container text-center">
+                    <button type="button" class="btn btn-primary btn-lg">Book a Free Class Now !!</button>
+                    <a href="https://play.google.com/store/apps/details?id=com.app.mirrorscore">
+                        <button type="button" class="btn btn-secondary btn-md ml-5"><img src="images/download.png" width="30px" height="34px">  DOWNLOAD APP</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TEACHERS  -->
+    
+    <div class="container-flex text-center p-4 m-5">
+        <h1>We bring you the Best Teachers</h1><br>
+        <h5>Learn from highly experienced teachers</h5><br><br><br>
+        <div class="row">
+                <div class="col">
+                    <img class="teachers hover-item" src="images/teacher.png"><h6>IIT Roorkee</h6>
+                </div>
+                <div class="col">
+                    <img class="teachers hover-item" src="https://pngimg.com/uploads/teacher/small/teacher_PNG11.png"><h6>BITS Pilani</h6>
+                </div>
+                <div class="col">
+                    <img class="teachers hover-item" src="images/teacher.png"><h6>IIT Roorkee</h6>
+                </div>
+                <div class="col">
+                    <img class="teachers hover-item" src="https://pngimg.com/uploads/teacher/small/teacher_PNG11.png"><h6>BITS Pilani</h6>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
