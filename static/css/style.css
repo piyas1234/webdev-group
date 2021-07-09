@@ -81,3 +81,41 @@ font-family: 'Zen Tokyo Zoo', cursive; */
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
+
+
+/* pratishtha CSS */
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+
+    .box {  
+    animation: 0.65s ease-out 0s 1 slideIn;
+    
+    background: #333;
+    padding: 50px;
+    }
+
+    .container-fluid{
+        height: 700px;
+        background-image: linear-gradient(0deg,rgba(255, 255, 255, 0.87),rgb(132, 201, 206));
+    }
+
+    .hover-item {
+    transition: 0.35s;
+    }
+    
+    .hover-item:hover {
+    transform: translate(0, -25px); 
+    }
+
+    .teachers{
+        height: 170px;
+        width: 170px;
+    }
