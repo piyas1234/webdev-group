@@ -2,65 +2,63 @@
 <html lang="en">
 
 <head>
-    <title>PageTitle</title>
+    <title>MirrorScore</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
 </head>
 
 <body>
     <div id="main-container">
-        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top nav-body">
             <div class="container-fluid">
                 <a class="
               navbar-brand
               text-uppercase text-info
-              shadow-lg
-              p-3
-              font-monospace
               text-wrap
-            " href="#">MirrorScore</a>
+            " href="#"><img width="50px" class="bg-info shadow-lg" src="./static/image/logo (1).png" alt=""
+                        srcset=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item   p-lg-1 m-md-3">
-                            <a class="nav-link active text-dark text-wrap" aria-current="page" href="#">Home</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-auto nav-links">
+                        <li class="nav-item ms-5">
+                            <a class="nav-link active    text-wrap" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item   p-lg-1 m-md-3">
-                            <a class="nav-link text-dark text-wrap" href="#">About</a>
-                        </li>
-
-                        <li class="nav-item   p-lg-1 m-md-3">
-                            <a class="nav-link text-dark text-wrap" href="#">Contact</a>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link   text-wrap" href="#">About</a>
                         </li>
 
-                        <li class="nav-item  p-lg-1 m-md-3">
-                            <a class="nav-link active text-dark text-wrap" aria-current="page" href="#">Free Classes</a>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link   text-wrap" href="#">Contact</a>
                         </li>
 
-                        <!-- <li class="nav-item   p-lg-1 m-md-3">
-                            <a class="nav-link text-dark text-wrap" href="#">school syllabus</a>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link   text-wrap" href="#">Free Classes</a>
                         </li>
-                        <li class="nav-item   p-lg-1 m-md-3">
-                            <a class="nav-link  text-dark text-wrap" href="#">Programming</a>
-                        </li> -->
+
+                        <li class="nav-item ms-3">
+                            <a class="nav-link  text-wrap" href="#">school syllabus</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link    text-wrap" href="#">Programming</a>
+                        </li>
                     </ul>
 
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                         <div class="d-flex w-100 auth">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-info text-white me-2" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-info text-white me-2 auth-btn" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 SignUp
                             </button>
 
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-info ms-auto" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-outline-info ms-auto auth-btn" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 Login
                             </button>
@@ -69,14 +67,24 @@
                 </div>
             </div>
         </nav>
+        <div class="col-md-4 offset-md-4">
+            <div id="speaker" class="card shadow p-3 mb-5 rounded col-md-3 rounded-circle speaker d-none">
+                <div class="card-body">
+
+                    <img width="50%" src="https://findicons.com/files/icons/2813/flat_jewels/512/speaker.png" alt=""
+                        srcset="">
+                    <h5 class="card-title">Please click here to install</h5>
+                </div>
+            </div>
+        </div>
+        
         <!-- ======= Hero Section ======= -->
         <main id="hero">
             <div class="container col-xxl-8 px-4 py-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="https://www.dropbox.com/s/25lk5ur2qvxms7o/AppLandingPage.png?raw=1"
-                            class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
-                            loading="lazy" />
+                        <img src="./static/image/bannerwww_comp (1).png" class="d-block mx-lg-auto img-fluid"
+                            alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
                     </div>
                     <div class="col-lg-6">
                         <h3 class="display-5 fw-bold lh-1 mb-3 text-info">
@@ -87,28 +95,91 @@
                             <button type="button" class="btn btn-info text-white btn-lg px-4 me-md-2">
                                 FREE CLASSES
                             </button>
-                            <button id="playstore" type="button" class="btn btn-outline-info btn-lg px-4">
-                                PLAY STORE
+                            <button id="playstore" type="button" class="btn btn-info btn-lg px-4">
+                                <img src="./static/image/play-store.png" alt="" sizes="" srcset="">
                             </button>
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
         </main>
 
 
-         <div class="col-md-4 offset-md-4">
-            <div id="speaker"
-            class="card shadow p-3 mb-5 bg-body rounded col-md-3 rounded-circle speaker d-none">
-                <div class="card-body">
-                    
-                    <img width="50%"
-                    src="https://findicons.com/files/icons/2813/flat_jewels/512/speaker.png" alt=""
-                    srcset="">
-                    <h5 class="card-title">Please click here to install</h5>
+        
+
+
+     
+
+
+        <!-- One-On-One Private Class -->
+        <section class=" container-fluid privateclass-container p-4">
+            <div class="row p-4">
+                <div class="col ml-5">
+                    <a><img src="https://mintbook.com/assetsNew/img/ams.gif" height="600px" width="600px"></a>
+                </div>
+                <div class="box col p-4 m-4"
+                    style="background-color: rgb(255, 255, 255); border-radius: 20px;  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 10px 0 rgba(0, 0, 0, 0.2);">
+                    <br>
+                    <h1 class="text-center">One-On-One Private Classes</h1><br>
+                    <h6 class="text-center m-3">Get Face-to-Face, Two-way Interaction with our Expert Faculty. Engage
+                        Face-To-Face With your
+                        mentor via video call.</h6><br>
+                    <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px; ">One-On-One
+                        Private
+                        Classes</a><br><br>
+                    <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Clear Doubts
+                        Live</a><br><br>
+                    <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Learn From
+                        Expert
+                        Faculty</a><br><br>
+                    <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Online Videos &
+                        Mock Tests
+                    </a><br><br><br>
+                    <div class="container text-center">
+                        <button type="button" class="btn btn-info btn-lg"
+                            style="border-radius: 20px;  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);">Book
+                            a Free Class Now !!</button>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.mirrorscore">
+                            <button type="button" class="btn btn-info btn-lg ml-5"
+                                style="border-radius: 20px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);">DOWNLOAD
+                                NOW</button>
+                        </a>
+                    </div>
+                </div>
             </div>
-         </div>
+        </section>
+        <!-- One-On-One Private Class -->
+
+
+
+        <!-- TEACHERS -->
+        <div class="container-flex text-center p-4 m-5">
+            <h1>We bring you the Best Teachers</h1><br>
+            <h5>Learn from highly experienced teachers</h5><br><br><br>
+            <div class="row">
+                <div class="col">
+                    <img class="teachers hover-item" src="images/teacher.png">
+                    <h6>IIT Roorkee</h6>
+                </div>
+                <div class="col">
+                    <img class="teachers hover-item" src="https://pngimg.com/uploads/teacher/small/teacher_PNG11.png">
+                    <h6>BITS Pilani</h6>
+                </div>
+                <div class="col">
+                    <img class="teachers hover-item" src="images/teacher.png">
+                    <h6>IIT Roorkee</h6>
+                </div>
+                <div class="col">
+                    <img class="teachers hover-item" src="https://pngimg.com/uploads/teacher/small/teacher_PNG11.png">
+                    <h6>BITS Pilani</h6>
+                </div>
+            </div>
         </div>
+        <!-- TEACHERS -->
+
+
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -142,62 +213,10 @@
                         </form>
 
 
-                        
-                        <!-- One-On-One Private Class -->
-                        <section class=" container-fluid p-4">
-                            <div class="row p-4">
-                                <div class="col ml-5">
-                                    <a><img src="https://mintbook.com/assetsNew/img/ams.gif" height="600px" width="600px"></a>
-                                </div>
-                                <div class="box col p-4 m-4" style="background-color: rgb(255, 255, 255); border-radius: 20px;  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 10px 0 rgba(0, 0, 0, 0.2);"><br>
-                                    <h1 class="text-center">One-On-One Private Classes</h1><br>
-                                    <h6 class="text-center m-3">Get Face-to-Face, Two-way Interaction with our Expert Faculty. Engage Face-To-Face With your
-                                        mentor via video call.</h6><br>
-                                    <a ><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px; ">One-On-One Private
-                                        Classes</a><br><br>
-                                    <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Clear Doubts
-                                        Live</a><br><br>
-                                    <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Learn From Expert
-                                        Faculty</a><br><br>
-                                    <a><img src="images/check.png" style="height: 30px; width:30px; margin-inline:50px;">Online Videos & Mock Tests
-                                    </a><br><br><br>
-                                    <div class="container text-center">
-                                        <button type="button" class="btn btn-info btn-lg" style="border-radius: 20px;  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);">Book a Free Class Now !!</button>
-                                        <a href="https://play.google.com/store/apps/details?id=com.app.mirrorscore">
-                                            <button type="button" class="btn btn-info btn-lg ml-5" style="border-radius: 20px; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);">DOWNLOAD NOW</button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>                  
-                        <!-- One-On-One Private Class -->
-
-                        
-                        
-                        <!-- TEACHERS -->
-                        <div class="container-flex text-center p-4 m-5">
-                            <h1>We bring you the Best Teachers</h1><br>
-                            <h5>Learn from highly experienced teachers</h5><br><br><br>
-                            <div class="row">
-                                    <div class="col">
-                                        <img class="teachers hover-item" src="images/teacher.png"><h6>IIT Roorkee</h6>
-                                    </div>
-                                    <div class="col">
-                                        <img class="teachers hover-item" src="https://pngimg.com/uploads/teacher/small/teacher_PNG11.png"><h6>BITS Pilani</h6>
-                                    </div>
-                                    <div class="col">
-                                        <img class="teachers hover-item" src="images/teacher.png"><h6>IIT Roorkee</h6>
-                                    </div>
-                                    <div class="col">
-                                        <img class="teachers hover-item" src="https://pngimg.com/uploads/teacher/small/teacher_PNG11.png"><h6>BITS Pilani</h6>
-                                </div>
-                            </div>
-                        </div>                    
-                        <!-- TEACHERS -->
 
 
 
-                        <script src="./asset/js/script.js"></script>
+                        <script src="./static/js/script.js"></script>
                         <!-- Bootstrap JS -->
 
                         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"

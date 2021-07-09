@@ -20,68 +20,31 @@ font-family: 'Zen Tokyo Zoo', cursive; */
 
 }
 
-
-.auth{
-    font-family: 'Zen Tokyo Zoo', cursive
+.nav-links{
+    font-family: 'Otomanopee One', sans-serif;
+    color: rgb(255, 251, 0);
 }
-.audio-button{
-     font-family: 'Zen Tokyo Zoo', cursive
-}
-
-.navbar{
-    /* font-family: 'Roboto', sans-serif; */
-    font-weight: bold;
-}
-
-.navbar-brand{
-    font-family: 'Otomanopee One', sans-serif !important;
-}
+ .active{
+     color: rgb(15, 153, 123)!important;
+ }
 
 
-.form-title{
-    font-family: 'Otomanopee One', sans-serif !important;
-    font-size:xx-large;
-}
- 
+ .nav-bg{
+     background-color: rgb(0, 247, 255) !important;
+     color: white !important;
+     transition: 2s;
+ }
 
-.form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-    color: #212121;
-    border: 4px solid #ff993b;
-    border-radius: 25px;
-}
-
-.form-signin .checkbox {
-    font-weight: 400;
-}
-
-.form-signin .form-floating:focus-within {
-    z-index: 2;
-}
-
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
- 
 .speaker{
-    position: fixed;
-    top: 200px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    position: absolute;
+    top: 100px;
+    font-family: sans-serif;
+    color: gray;
+    padding: 20px;
+     
 }
-
+ 
+  
 
 /* pratishtha CSS */
 
@@ -102,7 +65,7 @@ font-family: 'Zen Tokyo Zoo', cursive; */
     padding: 50px;
     }
 
-    .container-fluid{
+    .privateclass-container{
         height: 700px;
         background-image: linear-gradient(0deg,rgba(255, 255, 255, 0.87),rgb(132, 201, 206));
     }
